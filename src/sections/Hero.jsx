@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 const slides = [
-  { title: "For Busy People", img: "/images/hero1.jpg" },
-  { title: "To Lose Weight", img: "/images/hero2.jpg" },
-  { title: "To Gain Muscle", img: "/images/hero3.jpg" },
-  { title: "For High Performers", img: "/images/hero4.jpg" },
+  { title: "For Busy People", img: "/images/hero388.png" },
+  { title: "To Lose Weight", img: "/images/hero3999.png" },
+  { title: "To Gain Muscle", img: "/images/hero3.png" },
+  { title: "For High Performers", img: "/images/hero44.png" },
 ];
 
 export default function Hero() {
