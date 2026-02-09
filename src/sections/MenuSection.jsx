@@ -20,7 +20,7 @@ export default function MealsSection() {
 
   return (
     <section className="bg-white py-24 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-8xl mx-auto">
         {/* ================= HEADER ================= */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -66,14 +66,14 @@ export default function MealsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
           viewport={{ once: true }}
-          className="mt-16 ml-16 flex gap-8 overflow-x-auto scrollbar-hide pb-4"
+          className="mt-16 ml-30 flex gap-8 overflow-x-auto scrollbar-hide pb-4"
         >
           {filteredMeals.map((meal) => (
             <motion.div
               key={meal.id}
               whileHover={{ y: -4 }}
               transition={{ type: "spring", stiffness: 200, damping: 18 }}
-              className="min-w-60 sm:min-w-65  cursor-grab"
+              className="min-w-60 sm:min-w-60  cursor-grab"
             >
               {/* IMAGE */}
               <div className="relative rounded-[22px] overflow-hidden  bg-gray-100">
