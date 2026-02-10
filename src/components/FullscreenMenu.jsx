@@ -45,61 +45,34 @@ export default function FullscreenMenu({ open, setOpen }) {
 
       {/* RIGHT MENU */}
       <div className="relative w-full md:w-2/4 bg-white flex flex-col justify-center px-10 md:px-16">
+        {/* CLOSE BUTTON */}
+        <button
+          onClick={() => setOpen(false)}
+          className="absolute cursor-pointer top-8 right-20 text-2xl font-medium text-gray-900 hover:text-green-600 transition-all duration-300"
+        >
+          ✕
+        </button>
+
         <nav className="space-y-8 text-xl font-medium">
-          <Link
-            to="/"
-            onClick={() => setOpen(false)}
-            className="group block text-gray-900 hover:text-green-600 transition-all duration-300"
-          >
-            <span className="relative inline-block">
-              Homepage
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300 rounded-full" />
-            </span>
-          </Link>
-
-          <Link
-            to="/plans"
-            onClick={() => setOpen(false)}
-            className="group block text-gray-900 hover:text-green-600 transition-all duration-300"
-          >
-            <span className="relative inline-block">
-              Plans & Packages
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300 rounded-full" />
-            </span>
-          </Link>
-
-          <Link
-            to="/menu"
-            onClick={() => setOpen(false)}
-            className="group block text-gray-900 hover:text-green-600 transition-all duration-300"
-          >
-            <span className="relative inline-block">
-              Menu
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300 rounded-full" />
-            </span>
-          </Link>
-
-          <Link
-            to="/blog"
-            onClick={() => setOpen(false)}
-            className="group block text-gray-900 hover:text-green-600 transition-all duration-300"
-          >
-            <span className="relative inline-block">
-              Blog
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300 rounded-full" />
-            </span>
-          </Link>
-
-          <Link
-            to="/contact"
-            onClick={() => setOpen(false)}
-            className="group block text-gray-900 hover:text-green-600 transition-all duration-300"
-          >
-            <span className="relative inline-block">
-              Contact Us
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300 rounded-full" />
-            </span>
-          </Link>
+          {[
+            ["/", "Homepage"],
+            ["/plans", "Plans & Packages"],
+            ["/menu", "Menu"],
+            ["/blog", "Blog"],
+            ["/contact", "Contact Us"],
+          ].map(([path, label]) => (
+            <Link
+              key={path}
+              to={path}
+              onClick={() => setOpen(false)}
+              className="group block text-gray-900 hover:text-green-600 transition-all duration-300"
+            >
+              <span className="relative inline-block">
+                {label}
+                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-green-500 group-hover:w-full transition-all duration-300 rounded-full" />
+              </span>
+            </Link>
+          ))}
         </nav>
       </div>
     </div>
