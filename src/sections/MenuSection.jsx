@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import meals from "../data/meals.json";
+import { Link } from "react-router-dom";
 
 const filters = [
   { label: "All" },
@@ -55,9 +56,16 @@ export default function MealsSection() {
           </div>
 
           {/* CTA */}
-          <button className="mt-8 inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-3 text-white font-semibold shadow-sm hover:bg-emerald-700 cursor-pointer transition">
+          <Link
+                key="/menu"
+                to="/menu"
+                className="group relative overflow-hidden"
+              >
+                <button className="mt-8 inline-flex items-center justify-center rounded-full bg-emerald-600 px-7 py-3 text-white font-semibold shadow-sm hover:bg-emerald-700 cursor-pointer transition">
             See full menu
           </button>
+              </Link>
+          
         </motion.div>
 
         {/* ================= SLIDER ================= */}

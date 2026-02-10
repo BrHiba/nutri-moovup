@@ -84,7 +84,7 @@ export default function Footer() {
             <span className="font-medium">Follow us</span>
 
             <a
-              href="https://web.facebook.com/Advancedagencymaroc"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-black transition text-xl sm:text-2xl"
@@ -93,7 +93,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.instagram.com/advanced__agency/"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-black transition text-xl sm:text-2xl"
@@ -102,7 +102,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://wa.me/212666571808"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-black transition text-xl sm:text-2xl"
@@ -110,7 +110,7 @@ export default function Footer() {
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
             <a
-              href="https://wa.me/212666571808"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-black transition text-xl sm:text-2xl"
