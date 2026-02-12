@@ -41,9 +41,9 @@ export default function HowItWorks() {
         </p>
 
         <motion.button
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-7 bg-[#24a170] text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-[#1c7e57] transition"
+          className="mt-7 bg-[#24a170] text-white cursor-pointer px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-[#1c7e57] transition"
         >
           See plans
         </motion.button>

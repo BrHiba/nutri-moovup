@@ -32,7 +32,7 @@ export default function Footer() {
           {/* Nav */}
          
 
-          <nav className="flex flex-col mt-5 md:flex-row gap-8 text-sm font-medium text-gray-700">
+          <nav className="flex flex-col mt-5 md:flex-row gap-8 text-sm font-medium text-[#343b42]">
             {[
               ["Plans & Packages", "/plans"],
               ["Menu", "/menu"],
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-sm text-gray-500">© 2026 Nutri MoovUp.</p>
+          <p className="text-sm text-[#697886]">© 2026 Nutri MoovUp.</p>
         </div>
 
         {/* RIGHT COLUMN */}
@@ -87,7 +87,7 @@ export default function Footer() {
               href="/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-black transition text-xl sm:text-2xl"
+              className="text-[#697886] hover:text-[#343b42] transition text-xl sm:text-2xl"
             >
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
@@ -96,7 +96,7 @@ export default function Footer() {
               href="/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-black transition text-xl sm:text-2xl"
+              className="text-[#697886] hover:text-[#343b42] transition text-xl sm:text-2xl"
             >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
@@ -105,7 +105,7 @@ export default function Footer() {
               href="/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-black transition text-xl sm:text-2xl"
+              className="text-[#697886] hover:text-[#343b42] transition text-xl sm:text-2xl"
             >
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
@@ -113,7 +113,7 @@ export default function Footer() {
               href="/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-black transition text-xl sm:text-2xl"
+              className="text-[#697886] hover:text-[#343b42] transition text-xl sm:text-2xl"
             >
               <FontAwesomeIcon icon={faLinkedinIn} />
             </a>

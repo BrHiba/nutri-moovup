@@ -18,17 +18,17 @@ export default function MealFilters({ active, setActive }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.15 }}
       viewport={{ once: true }}
-      className="flex items-center justify-center flex-wrap gap-3"
+      className="flex items-center justify-center flex-wrap gap-2 sm:gap-3"
     >
       {filters.map((f) => (
         <button
           key={f.label}
           onClick={() => setActive(f.label)}
-          className={`flex items-center gap-2 px-4 py-3 rounded-full whitespace-nowrap transition-all cursor-pointer
+          className={`flex items-center gap-2 px-3 sm:px-4 py-2.5 sm:py-3 rounded-full whitespace-nowrap transition-all cursor-pointer text-sm sm:text-base
             ${
               active === f.label
-                ? "bg-emerald-900 text-white shadow-sm"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                ? "bg-[#114b34] text-white shadow-sm"
+                : "bg-gray-100 text-[#343b42] hover:bg-gray-200"
             }`}
         >
           {f.icon && <img src={f.icon} alt="" className="w-4 h-4" />}

@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "title": "Grilled Chicken Quinoa Bowl",
+        "image": "/favorites/chicken-quinoa.jpg",
+        "label": "High Protein",
+        "labelIcon": "/icons/proteine.png",
+        "macros": {
+            "protein": 50,
+            "carbs": 40,
+            "fat": 20
+        }
+    },
+    {
+        "id": 2,
+        "title": "Salmon Teriyaki Plate",
+        "image": "/favorites/salmon-teriyaki.jpg",
+        "label": "Balanced",
+        "labelIcon": "/icons/balance.png",
+        "macros": {
+            "protein": 40,
+            "carbs": 40,
+            "fat": 20
+        }
+    },
+    {
+        "id": 3,
+        "title": "Falafel Plate",
+        "image": "/favorites/falafel.jpg",
+        "label": "Vegetarian",
+        "labelIcon": "/icons/vegetarian.png",
+        "macros": {
+            "protein": 30,
+            "carbs": 50,
+            "fat": 20
+        }
+    },
+    
+    {
+        "id": 4,
+        "title": "Zucchini Noodle Bowl",
+        "image": "/favorites/zucchini-noodles.jpg",
+        "label": "Low Carb",
+        "labelIcon": "/icons/lowcarb.png",
+        "macros": {
+            "protein": 45,
+            "carbs": 20,
+            "fat": 35
+        }
+    },
+    {
+        "id": 5,
+        "title": "Chicken Shawarma Plate",
+        "image": "/favorites/chicken-shawarma.jpg",
+        "label": "Chef’s Pick",
+        "labelIcon": "/icons/chef.png",
+        "macros": {
+            "protein": 45,
+            "carbs": 35,
+            "fat": 20
+        }
+    },
+    
+    {
+        "id": 6,
+        "title": "Protein Pancakes",
+        "image": "/favorites/protein-pancakes.jpg",
+        "label": "High Protein",
+        "labelIcon": "/icons/proteine.png",
+        "macros": {
+            "protein": 55,
+            "carbs": 35,
+            "fat": 10
+        }
+    }
+]

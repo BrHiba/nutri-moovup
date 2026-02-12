@@ -2,7 +2,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// 6 countries m3a drapo
 const countries = [
   { name: "World", flag: "/icons/world.png" },
   { name: "Morocco", flag: "/icons/flags/morocco.png" },
@@ -37,7 +36,7 @@ export default function WorldDropdown({ value, onChange }) {
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-17 px-5 py-4 rounded-xl
-                   hover:bg-gray-100 border border-[#ebedef] transition text-gray-500 font-medium cursor-pointer"
+                   hover:bg-gray-100 border border-[#ebedef] transition text-[#697886] font-medium cursor-pointer"
       >
         <div className="flex items-center gap-2">
           {/* FLAG OF SELECTED COUNTRY */}
@@ -52,7 +51,7 @@ export default function WorldDropdown({ value, onChange }) {
         {/* ARROW */}
         <motion.span
           animate={{ rotate: open ? 180 : 0 }}
-          className="text-gray-500"
+          className="text-[#697886]"
         >
           <img src="/icons/arrow-down.png" className="w-5 h-5" />
         </motion.span>
@@ -75,7 +74,7 @@ export default function WorldDropdown({ value, onChange }) {
                   onChange(c.name);
                   setOpen(false);
                 }}
-                className={`w-full flex items-center justify-between px-5 py-4 hover:bg-gray-50 transition text-gray-700
+                className={`w-full flex items-center justify-between px-5 py-4 hover:bg-gray-50 transition text-[#343b42] 
                   ${value === c.name ? "bg-gray-50" : ""}`}
               >
                 <div className="flex items-center gap-2">

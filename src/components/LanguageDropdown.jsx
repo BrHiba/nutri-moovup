@@ -25,7 +25,7 @@ export default function LanguageDropdown({ value, onChange }) {
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-21 px-5 py-4 rounded-xl
-                    hover:bg-gray-100 border border-[#ebedef] transition text-gray-500 font-medium cursor-pointer"
+                    hover:bg-gray-100 border border-[#ebedef] transition text-[#697886] font-medium cursor-pointer"
       >
         
          {value}
@@ -33,7 +33,7 @@ export default function LanguageDropdown({ value, onChange }) {
         <motion.span
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.25 }}
-          className="text-gray-500"
+          className="text-[#697886]"
         >
           <img src="/icons/arrow-down.png" alt="" className="w-5 h-5" />
         </motion.span>
@@ -59,7 +59,7 @@ export default function LanguageDropdown({ value, onChange }) {
                   setOpen(false);
                 }}
                 className={`w-full flex justify-between px-5 py-4
-              hover:bg-gray-50 transition  text-gray-700  
+              hover:bg-gray-50 transition  text-[#343b42] 
               ${value === lang ? "bg-gray-50" : ""}`}
               >
                 {lang}

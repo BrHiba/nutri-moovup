@@ -5,6 +5,9 @@ import NutriSection from "../sections/NutriSection";
 import Partners from "../sections/Partners";
 import Works from "../sections/HowItWorks";
 import HeroMessage from "../sections/HeroMessage";
+import Testimonials from "../sections/Testimonials";
+import CommunityMarquee from "../sections/CommunityMarquee";
+import FavoritesSection from "../sections/FavoritesSection";
 
 function Home() {
   return (
@@ -16,6 +19,9 @@ function Home() {
     <Partners />
     <Works />
     <HeroMessage />
+    <Testimonials />
+    <FavoritesSection />
+    <CommunityMarquee />
     </>
   );
 }

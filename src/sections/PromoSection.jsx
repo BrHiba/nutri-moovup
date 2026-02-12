@@ -25,11 +25,10 @@ export default function PromoSection() {
         </div>
 
         {/* RIGHT IMAGE */}
-        {/* RIGHT IMAGE */}
         <div className="flex justify-center ">
           <div className="w-85 sm:w-95 md:w-112.5  rounded-[28px] overflow-hidden shadow-xl">
             <img
-              src="/images/ramadan.jpg"
+              src="/images/ramadan.png"
               alt="Promo"
               className="w-full h-full object-cover"
             />

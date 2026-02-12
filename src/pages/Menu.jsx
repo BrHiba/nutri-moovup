@@ -6,14 +6,14 @@ import meals from "../data/meals.json";
 import MealCard from "../components/MealCard";
 import MealFilters from "../components/MealFilters";
 import MealTypeDropdown from "../components/MealTypeDropdown";
-// 👉 date range (yesterday → +6 days)
+
 
 function getWeekRange() {
   const start = new Date();
-  start.setDate(start.getDate() - 1); // yesterday
+  start.setDate(start.getDate() - 1); 
 
   const end = new Date(start);
-  end.setDate(start.getDate() + 6); // 6 days ba3d
+  end.setDate(start.getDate() + 6); 
 
   const format = (d) =>
     d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
@@ -23,7 +23,7 @@ function getWeekRange() {
 
 
 
-function MenuPage() {
+function Menu() {
     const [visibleCount, setVisibleCount] = useState(8);
 
   const [navbarVisible, setNavbarVisible] = useState(true);
@@ -70,20 +70,19 @@ function MenuPage() {
           </span>{" "}
         </div>
 
-        <h1 className="text-4xl md:text-4xl font-bold text-gray-900">
-          Check out this week's <span className="text-emerald-600">Menu</span>
+        <h1 className="text-4xl md:text-4xl font-bold text-[#343b42]">
+          Check out this week's <span className="text-[#24a170]">Menu</span>
         </h1>
 
-        <p className="mt-3 text-gray-500 max-w-xl">
+        <p className="mt-3  text-[#697886] max-w-xl">
           Discover meals tailored to your goals and lifestyle.
         </p>
 
-        <button className="w-fit bg-[#24a170] text-white px-10 py-3  mt-8 rounded-full hover:bg-emerald-700  transition  font-semibold cursor-pointer">
+        <button className="w-fit bg-[#24a170] text-white px-10 py-3  mt-8 rounded-full hover:bg-[#1c7e57]  transition  font-semibold cursor-pointer">
           Order Now{" "}
         </button>
       </motion.div>
       {/* FILTER BAR */}
-      {/* STICKY FILTER BAR */}
       <div
         className={`
           sticky z-40 transition-all duration-300
@@ -121,8 +120,8 @@ function MenuPage() {
   <div className="mt-16 flex justify-center">
     <button
       onClick={() => setVisibleCount((prev) => prev + 8)}
-      className="bg-[#d5ffd1] text-emerald-700  px-10 py-3 rounded-full
-                 hover:bg-[#a7ff9e] transition font-semibold cursor-pointer"
+      className="bg-[#e9f6f1] text-[#24a170]  px-10 py-3 rounded-full
+                 hover:bg-[#bce7d6] transition font-semibold cursor-pointer"
     >
       Load more meals
     </button>
@@ -138,4 +137,4 @@ function MenuPage() {
   );
 }
 
-export default MenuPage;
+export default Menu;

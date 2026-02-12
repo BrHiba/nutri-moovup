@@ -1,4 +1,49 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* ========== Brand Colors ========== */
+  --primary: #24a170;
+  --primary-hover: #1c7e57;
+  --primary-soft: #e9f6f1;
+  --primary-soft-hover: #bce7d6;
+
+  --secondary: #3cad68;
+  --secondary-hover: #35a763;
+
+  --dark-green: #114b34;
+  --deep-green: #1c7e57;
+
+  /* ========== Text Colors ========== */
+  --text-main: #343b42;
+  --text-muted: #697886;
+  --text-gray-500: #6b7280;
+  --text-gray-600: #4b5563;
+
+  /* ========== Accent Colors ========== */
+  --purple: #987dde;
+  --yellow: #f4b248;
+  --blue: #61a7e6;
+
+  /* ========== UI ========== */
+  --bg-page: #ffffff;
+  --bg-soft: #f9fafb;
+  --radius: 14px;
+  --transition: all 0.3s ease;
+}
+
+* {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg-page);
+  color: var(--text-main);
+}
+
+
+
 @keyframes subtitle {
   from {
     transform: translateY(100%);
@@ -21,17 +66,18 @@
   scrollbar-width: none;
 }
 
-@keyframes floatUp {
+
+@keyframes floatSlow {
   0% {
-    opacity: 1;
     transform: translateY(0) scale(1);
+    opacity: 1;
   }
   100% {
+    transform: translateY(-80px) scale(1.2);
     opacity: 0;
-    transform: translateY(-80px) scale(1.5);
   }
 }
 
-.animate-float {
-  animation: floatUp 1s ease-out forwards;
+.animate-float-slow {
+  animation: floatSlow 2s ease-out forwards;
 }

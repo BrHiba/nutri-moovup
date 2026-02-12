@@ -1,20 +1,27 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function HeroMessage() {
   const [emojis, setEmojis] = useState([]);
+  const lastTime = useRef(0);
 
   const handleMove = (e) => {
+    const now = Date.now();
+
+    if (now - lastTime.current < 120) return;
+    lastTime.current = now;
+
+    const spacing = 60; 
     const newEmoji = {
       id: Math.random(),
-      x: e.clientX + (Math.random() * 80 - 40),
-      y: e.clientY + (Math.random() * 80 - 40),
+      x: e.clientX + (Math.random() * spacing - spacing / 2),
+      y: e.clientY + (Math.random() * spacing - spacing / 2),
     };
 
-    setEmojis((prev) => [...prev, newEmoji]);
+    setEmojis((prev) => [...prev.slice(-15), newEmoji]); 
 
     setTimeout(() => {
       setEmojis((prev) => prev.slice(1));
-    }, 1000);
+    }, 2000); 
   };
 
   return (
@@ -33,7 +40,7 @@ export default function HeroMessage() {
       {emojis.map((emoji) => (
         <span
           key={emoji.id}
-          className="absolute text-3xl animate-float pointer-events-none"
+          className="absolute text-3xl animate-float-slow pointer-events-none"
           style={{
             left: emoji.x,
             top: emoji.y,

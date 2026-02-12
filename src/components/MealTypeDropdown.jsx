@@ -25,7 +25,7 @@ export default function MealTypeDropdown({ value, onChange }) {
       <button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-8 px-4 py-3 rounded-full
-                   bg-gray-100 hover:bg-gray-200 transition text-gray-700 cursor-pointer"
+                   bg-gray-100 hover:bg-gray-200 transition text-[#343b42] cursor-pointer"
       >
         {value === "All" ? "Type of meal" : value}
         <motion.span
@@ -56,7 +56,7 @@ export default function MealTypeDropdown({ value, onChange }) {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.98 }}
             transition={{ duration: 0.2 }}
-            className="absolute mt-3 right-0 w-55 rounded-2xl bg-white text-gray-700 
+            className="absolute mt-3 right-0 w-55 rounded-2xl bg-white text-[#343b42]
                         shadow-xl  z-50 overflow-hidden border border-[#ebedef] "
           >
             {mealTypes.map((type) => (
